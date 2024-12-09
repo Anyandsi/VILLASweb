@@ -235,11 +235,27 @@ class Branding {
 
     try {
       image = (
-        <img
-          style={style}
-          src={require("./" + this.brand + "/img/" + this.values.logo).default}
-          alt={"Logo " + this.values.title}
-        />
+        <div>
+          <img
+            style={{ width: 150 }}
+            src={
+              require("./" + this.brand + "/img/" + this.values.logo).default
+            }
+            alt={"Logo " + this.values.title}
+          />
+          {this.values.secondLogo ? (
+            <img
+              style={{ width: 55 }}
+              src={
+                require("./" + this.brand + "/img/" + this.values.secondLogo)
+                  .default
+              }
+              alt={"Logo " + this.values.title}
+            />
+          ) : (
+            <></>
+          )}
+        </div>
       );
     } catch (err) {
       console.error(

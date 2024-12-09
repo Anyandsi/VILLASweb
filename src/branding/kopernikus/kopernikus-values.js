@@ -19,6 +19,7 @@ const kopernikus_values = {
   title: "Kopernikus Projekte",
   subtitle: "ENSURE",
   logo: "kopernikus_logo.jpg",
+  secondLogo: "codemo_logo.png",
   pages: {
     home: true,
     scenarios: true,
